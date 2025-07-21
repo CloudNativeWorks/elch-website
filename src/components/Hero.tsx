@@ -49,26 +49,17 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    {/* Badge */}
-                    <motion.div
-                        className="inline-flex items-center space-x-2 glass-effect px-4 py-2 rounded-full mb-8"
-                        whileHover={{ scale: 1.05 }}
-                    >
-                        <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                        <span className="text-sm text-gray-300">Stack Solution for Simplifying Envoy Management</span>
-                    </motion.div>
 
                     {/* Main Heading */}
-                              <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight" itemProp="headline">
-            <span className="text-white">Elchi is the</span>
-            <br />
-            <span className="text-gradient">Next Generation Proxy Management</span>
-          </h1>
+                    <h1 className="text-5xl lg:text-7xl font-bold mb-6 leading-tight" itemProp="headline">
+                        <span className="text-white">Elchi is the</span>
+                        <br />
+                        <span className="text-gradient">Next Generation Proxy Management</span>
+                    </h1>
 
                     {/* Subtitle */}
                     <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-                        React TypeScript frontend with Go-powered backend. Manage Envoy configurations with xDS protocol,
-                        real-time validation, and visual dependency graphs across any infrastructure.
+                        Manage multi proxy configurations with xDS protocol, real-time validation, metric views and visual dependency graphs across any infrastructure.
                     </p>
 
                     {/* CTA Buttons */}
@@ -94,7 +85,7 @@ const Hero = () => {
 
                     {/* Stats */}
                     <motion.div
-                        className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
+                        className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto"
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
@@ -103,6 +94,11 @@ const Hero = () => {
                             { number: 'xDS', label: 'Protocol Support' },
                             { number: 'Real-time', label: 'Config Validation' },
                             { number: 'Multi-Version', label: 'Envoy Support' },
+                            { number: 'Agent', label: 'Powered Management' },
+                            { number: 'Metrics', label: 'Graphs' },
+                            { number: 'Dependencies', label: 'Graphs' },
+                            { number: 'Quick', label: 'Configuration Scenarios' },
+                            { number: 'Proto', label: 'Generated configurations' },
                         ].map((stat, index) => (
                             <motion.div
                                 key={index}

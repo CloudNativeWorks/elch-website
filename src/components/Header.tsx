@@ -19,7 +19,6 @@ const Header = () => {
         { name: 'Screenshots', href: '#screenshots' },
         { name: 'Features', href: '#features' },
         { name: 'Architecture', href: '#architecture' },
-        { name: 'Documentation', href: '#docs' },
     ]
 
     return (
@@ -37,9 +36,9 @@ const Header = () => {
                         whileHover={{ scale: 1.05 }}
                     >
                         <div className="flex items-center justify-center p-1">
-                            <img 
-                                src="/logo.png" 
-                                alt="Elchi Logo" 
+                            <img
+                                src="/logo.png"
+                                alt="Elchi Logo"
                                 className="w-26 h-20 object-contain"
                             />
                         </div>

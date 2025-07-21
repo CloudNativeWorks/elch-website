@@ -29,18 +29,6 @@ const CallToAction = () => {
                     </div>
 
                     <div className="relative z-10">
-                        {/* Badge */}
-                        <motion.div
-                            className="inline-flex items-center space-x-2 glass-effect px-4 py-2 rounded-full mb-8"
-                            initial={{ opacity: 0, scale: 0.8 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            viewport={{ once: true }}
-                        >
-                            <Star className="w-4 h-4 text-yellow-400" />
-                            <span className="text-sm text-gray-300">Experimental Project</span>
-                        </motion.div>
-
                         {/* Main Heading */}
                         <motion.h2
                             className="text-4xl lg:text-6xl font-bold mb-6"
@@ -62,7 +50,7 @@ const CallToAction = () => {
                             transition={{ duration: 0.8, delay: 0.4 }}
                             viewport={{ once: true }}
                         >
-                            Try the stack solution for Envoy management with our 24-hour demo account,
+                            Try the stack solution for Proxy management with our 24-hour demo account,
                             or deploy to your Kubernetes cluster using our Helm chart.
                         </motion.p>
 
@@ -134,11 +122,11 @@ const CallToAction = () => {
                             transition={{ duration: 0.8, delay: 0.8 }}
                             viewport={{ once: true }}
                         >
-                            <div className="text-sm text-gray-400">⚠️ Experimental Stage</div>
+                            <div className="text-sm text-gray-400">✓ Ready To Use</div>
                             <div className="text-sm text-gray-400">✓ MongoDB Store</div>
-                            <div className="text-sm text-gray-400">✓ go-control-plane</div>
+                            <div className="text-sm text-gray-400">✓ xDS Configurations</div>
                             <div className="text-sm text-gray-400">✓ Multi-Version Envoy</div>
-                            <div className="text-sm text-gray-400">✓ React TypeScript</div>
+                            <div className="text-sm text-gray-400">✓ Agent Support</div>
                         </motion.div>
                     </div>
                 </motion.div>

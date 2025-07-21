@@ -119,23 +119,6 @@ const Features = () => {
                         </motion.div>
                     ))}
                 </div>
-
-                {/* Bottom CTA */}
-                <motion.div
-                    className="text-center mt-16"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.4 }}
-                    viewport={{ once: true }}
-                >
-                    <motion.button
-                        className="btn-primary text-lg px-12 py-4"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
-                    >
-                        Explore All Features
-                    </motion.button>
-                </motion.div>
             </div>
         </section>
     )

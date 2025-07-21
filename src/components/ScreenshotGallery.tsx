@@ -41,6 +41,13 @@ const ScreenshotGallery = () => {
         },
         {
             id: 6,
+            title: "Overview",
+            description: "Overview of the platform.",
+            image: "/main.png",
+            category: "Overview"
+        },
+        {
+            id: 11,
             title: "xDS Configuration",
             description: "Easy configuration setup for your Envoy proxies",
             image: "/configuration.png",
@@ -66,6 +73,13 @@ const ScreenshotGallery = () => {
             description: "View detailed logs.",
             image: "/logs.png",
             category: "Logs"
+        },
+        {
+            id: 12,
+            title: "Working Diagram",
+            description: "How Elchi works.",
+            image: "/flow.png",
+            category: "Diagram"
         }
     ]
 

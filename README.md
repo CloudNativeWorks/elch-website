@@ -131,6 +131,6 @@ MIT License - See [LICENSE](LICENSE) file for details.
 
 ---
 
-**Note:** This project showcases [Elchi](https://demo.elchi.io) - a stack solution for Envoy management combining React TypeScript frontend with Go backend. The actual platform can be tried at [demo.elchi.io](https://demo.elchi.io) or deployed via [Helm chart](https://artifacthub.io/packages/helm/elchi/elchi-platform).
+**Note:** This project showcases [Elchi](https://demo.elchi.io) - a stack solution for Proxy management combining React TypeScript frontend with Go backend. The actual platform can be tried at [demo.elchi.io](https://demo.elchi.io) or deployed via [Helm chart](https://artifacthub.io/packages/helm/elchi/elchi-platform).
 
 ⚠️ **Experimental Project**: Currently in experimental stage. Use with caution in production environments. 
