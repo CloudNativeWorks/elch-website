@@ -37,7 +37,7 @@ const Header = () => {
                     >
                         <div className="flex items-center justify-center p-1">
                             <img
-                                src="/logo.png"
+                                src="logo.png"
                                 alt="Elchi Logo"
                                 className="w-26 h-20 object-contain"
                             />

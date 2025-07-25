@@ -8,77 +8,77 @@ const ScreenshotGallery = () => {
             id: 1,
             title: "Service Management",
             description: "Manage your services and their configurations",
-            image: "/service.png",
+            image: "service.png",
             category: "Service"
         },
         {
             id: 2,
             title: "Filters",
             description: "Use most common filters to find your Envoy proxies",
-            image: "/filter.png",
+            image: "filter.png",
             category: "Filter"
         },
         {
             id: 3,
             title: "Scenarios",
             description: "Wizard based configuration management",
-            image: "/scenario.png",
+            image: "scenario.png",
             category: "Scenario"
         },
         {
             id: 4,
             title: "Metric Dashboard",
             description: "View your metrics in a dashboard",
-            image: "/metric.png",
+            image: "metric.png",
             category: "Metrics"
         },
         {
             id: 5,
             title: "Dependency Graph",
             description: "Get a visual representation of your dependencies",
-            image: "/dependency.png",
+            image: "dependency.png",
             category: "Dependency"
         },
         {
             id: 6,
             title: "Overview",
             description: "Overview of the platform.",
-            image: "/main.png",
+            image: "main.png",
             category: "Overview"
         },
         {
             id: 11,
             title: "xDS Configuration",
             description: "Easy configuration setup for your Envoy proxies",
-            image: "/configuration.png",
+            image: "configuration.png",
             category: "Configuration"
         },
         {
             id: 7,
             title: "Agent",
             description: "With agent you can distribute your configurations and manage network traffic",
-            image: "/agent.png",
+            image: "agent.png",
             category: "Agent"
         },
         {
             id: 8,
             title: "Config Info",
             description: "Proto based configuration info",
-            image: "/confinfo.png",
+            image: "confinfo.png",
             category: "Config Info"
         },
         {
             id: 9,
             title: "Logs",
             description: "View detailed logs.",
-            image: "/logs.png",
+            image: "logs.png",
             category: "Logs"
         },
         {
             id: 12,
             title: "Working Diagram",
             description: "How Elchi works.",
-            image: "/flow.png",
+            image: "flow.png",
             category: "Diagram"
         }
     ]
