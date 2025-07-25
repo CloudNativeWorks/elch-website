@@ -35,13 +35,10 @@ jobs:
       run: NODE_OPTIONS="--max-old-space-size=4096" npm run build
 
     - name: Copy robots.txt
-      run: cp robots.txt ./dist/
+      run: cp public/robots.txt ./dist/
 
     - name: Copy sitemap.xml
-      run: cp sitemap.xml ./dist/
-
-    - name: Copy google40e705b3b6becf97.html
-      run: cp google40e705b3b6becf97.html ./dist/
+      run: cp public/sitemap.xml ./dist/
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
