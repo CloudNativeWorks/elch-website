@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: NODE_OPTIONS="--max-old-space-size=4096" npm run build
+
+    - name: Copy robots.txt
+      run: cp robots.txt ./dist/
+
+    - name: Copy sitemap.xml
+      run: cp sitemap.xml ./dist/
+
+    - name: Copy google40e705b3b6becf97.html
+      run: cp google40e705b3b6becf97.html ./dist/
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './dist'
+        name: github-pages-${{ github.run_id }}
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+      with:
+        token: ${{ secrets.GH_PAT }}
+        artifact_name: github-pages-${{ github.run_id }}
