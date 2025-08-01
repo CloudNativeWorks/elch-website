@@ -107,7 +107,7 @@ const CallToAction = () => {
                                 className="btn-secondary flex items-center space-x-2 text-lg px-12 py-4"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                onClick={() => window.open('https://artifacthub.io/packages/helm/elchi/elchi-platform', '_blank')}
+                                onClick={() => window.open('https://artifacthub.io/packages/helm/elchi-stack/elchi-stack', '_blank')}
                             >
                                 <Download size={20} />
                                 <span>Helm Chart</span>
